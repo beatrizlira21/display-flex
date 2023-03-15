@@ -1,0 +1,39 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0px;
+}
+
+.item {
+  background-color: #b8bce0;
+  border: 5px solid #cbe7f5;
+  padding: 20px;
+  border-radius: 5px;
+  display: grid;
+}
+
+.botao {
+  background-color: #f7c6f1;
+  text-decoration: none;
+  color: #042940;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.grid {
+  display: grid;
+  /*fr distribue fracionado por elemento, nesse caso vai distribuir metado do espaço pra cada elemento (estava com valor de 1fr 1fr)*/
+  /*a quantidade de colunas vai ser definido pela quantidade de espaços, se eu quiser com 3 colunas, coloco: 300px 300px 300px (tendo um valor para cada quantidade de coluna)*/
+  grid-template-columns: 300px 300px;
+  /*gap é margem entre as grides*/
+  gap: 20px;
+  /*Para que o justify content funcione, o valor do grid-template deve ser fixo, não pode ser o o valor 'fr', pq o fr ocupa a medida da tela inteira e precisa de espaço sobrando para q o justify funcione, com o fr ou a porcentagem isso não tem como acontecer*/
+  justify-content: center;
+}
